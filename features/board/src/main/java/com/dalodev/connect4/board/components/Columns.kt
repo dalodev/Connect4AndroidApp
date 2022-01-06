@@ -1,0 +1,23 @@
+package com.dalodev.connect4.board.components
+
+import androidx.compose.foundation.ExperimentalFoundationApi
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.lazy.GridCells
+import androidx.compose.foundation.lazy.LazyVerticalGrid
+import androidx.compose.foundation.lazy.items
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.unit.dp
+import com.dalodev.connect4.board.model.Column
+
+@ExperimentalFoundationApi
+@Composable
+fun Columns(columns: List<Column>) {
+    LazyVerticalGrid(
+        cells = GridCells.Fixed(7),
+        contentPadding = PaddingValues(12.dp),
+    ) {
+        items(columns) { item ->
+            ColumnButton(item)
+        }
+    }
+}

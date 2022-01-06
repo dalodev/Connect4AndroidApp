@@ -41,6 +41,11 @@ object Deps {
     object Local {
 
         const val app = ":app"
+        const val ui = ":ui"
+        const val core = ":core"
+        const val navigation = ":navigation"
+        const val dashboard = ":features:dashboard"
+        const val board = ":features:board"
     }
 
     object Kotlin {
@@ -65,7 +70,7 @@ object Deps {
         private const val coreKtxVersion = "1.7.0"
         private const val fragmentKtxVersion = "1.3.2"
         private const val pagingVersion = "2.1.2"
-        const val compose_version = "1.0.1"
+        const val compose_version = "1.0.5"
 
         const val appCompat = "androidx.appcompat:appcompat:${appCompatVersion}"
         const val navFragmentKtx =
@@ -88,6 +93,7 @@ object Deps {
         const val composePreview = "androidx.compose.ui:ui-tooling-preview:$compose_version"
         const val composeActivity = "androidx.activity:activity-compose:1.3.0-alpha06"
         const val composeActivityUiTooling = "androidx.compose.ui:ui-tooling:$compose_version"
+        const val composeNavigation = "androidx.navigation:navigation-compose:2.4.0-beta02"
     }
 
     object Google {
@@ -101,7 +107,8 @@ object Deps {
         const val materialComponents =
             "com.google.android.material:material:${materialComponentsVersion}"
         const val dataBinding = "com.android.databinding:cinouker:$dataBindingVersion"
-
+        const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:1.0.0-alpha03"
+        const val hiltLifecycleViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03"
     }
 
     object Square {

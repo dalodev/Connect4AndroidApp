@@ -3,7 +3,10 @@
     package="com.dalodev.connect4">
 
     <application
-        android:allowBackup="true"
+        android:name=".Connect4App"
+        android:allowBackup="false"
+        android:extractNativeLibs="false"
+        android:fullBackupContent="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"

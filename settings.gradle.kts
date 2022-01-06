@@ -1,1 +1,7 @@
 include(":app")
+include(":ui")
+include(":core")
+include(":features:dashboard")
+include(":features:board")
+include(":app:navigation")
+include(":navigation")

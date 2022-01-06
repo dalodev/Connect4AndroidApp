@@ -11,7 +11,7 @@ buildscript {
         classpath(Deps.Plugins.navSafeArgs)
         classpath(Deps.Plugins.daggerHiltGradle)
         // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle.kts.kts.kts files
+        // in the individual module build.gradle.kts.kts.kts.kts files
     }
 }
 
